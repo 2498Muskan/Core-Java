@@ -1,0 +1,105 @@
+1. first this was named as OAK(1991)
+2. then again it was named as Green project (1991)
+it was again named as Star7 demo(1992)
+3. at last they named as java (in 1995 May)
+First official release (january 1996)-java goes mainstream
+
+The Main idea of Java is "Write Once,Run Anywhere" which is the major plus point for this programming language
+
+Java (1.0)-jan 1996
+JVM, core libraries,applets-"Write Once,Run Anywhere"
+Java 5 -Sep 2004
+Generics,annotations,enums,enhanced for loop
+Java 8 -mar 2014 (standard version)
+Lambdas,Stream API,new date/time API
+
+Premetive DataTypes
+Numeric datatypes
+1. Byte
+2. integer
+3. Short
+4. long
+5. Float
+6. Double
+String datatypes
+1. Char
+2. String
+Boolean datatypes
+1. Boolean 
+Rules
+should not be a number
+should not start with special symbols
+
+Premetive DataTypes
+1. string 
+2. Array
+3. Class
+4. Interface
+
+
+Method Explanation
+Scanner method             Example             Return type
+nextInt()                     20                    int
+nextLong()               9876543210L                long
+nextFloat()                 85.5f                   float
+nextDouble()               2500.75                  double
+next()                      venu                    String
+nextLine()                Hello Java                String
+next().charAt(0)              A                     char
+nextBoolean()               true                    boolean
+
+DAY-1 program
+import java.util.Scanner;
+
+class Firstcode {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        byte a;
+        short b;
+        int age;
+        long totalMarks;
+        float marks;
+        double average;
+        char grade;
+        String name;
+        boolean result;
+         System.out.println("---------------------");
+        a = sc.nextByte();
+        b = sc.nextShort();
+        age = sc.nextInt();
+       totalMarks = sc.nextLong();
+        marks = sc.nextFloat();
+        average = sc.nextDouble();
+        grade = sc.next().charAt(0);
+        name = sc.next();
+       result = sc.nextBoolean();
+       System.out.println(a);
+       System.out.println(b);
+       System.out.println(age);
+       System.out.println(totalMarks);
+       System.out.println(marks);
+       System.out.println(average);
+       System.out.println(grade);
+       System.out.println(name);
+       System.out.println(result);
+
+    }
+}
+OUTPUT:1
+23
+20
+100
+90
+90
+A
+muskan
+true
+1
+23
+20
+100
+90.0
+90.0
+A
+muskan
+true

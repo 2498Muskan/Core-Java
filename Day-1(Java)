@@ -103,3 +103,13 @@ true
 A
 muskan
 true
+
+
+
+Operators
+1. Arithematic
+ + - * / %
+2. Relational
+== != > < >= <=
+3. Logical
+

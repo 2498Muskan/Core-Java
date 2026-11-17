@@ -112,4 +112,12 @@ Operators
 2. Relational
 == != > < >= <=
 3. Logical
-
+&& || !
+4. Assignment 
+= += -= *= /= %= &= 
+5. Unary 
+ + - ++ -- ! ~
+6. Bitwise 
+& \| ^ ~
+7.Shift 
+<< >> >>>

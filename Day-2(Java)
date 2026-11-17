@@ -4,6 +4,21 @@ Control Statements
      if condition{
             //block of code
         }
+import java.util.Scanner;
+public class condition {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        if (a<=b){
+            System.out.print("Condition is true");
+            sc.close();
+        }
+    }    
+}
+
+
  * else if
       if condition{
             //block of code
@@ -11,6 +26,31 @@ Control Statements
        else{
            //block of code
        }
+
+import java.util.Scanner;
+
+public class condition2 {
+   public condition2() {
+   }
+
+   public static void main(String[] var0) {
+      Scanner var1 = new Scanner(System.in);
+      System.out.println("Enter a number:");
+      int var2 = var1.nextInt();
+      int var3 = var1.nextInt();
+      if (var2 <= var3) {
+         System.out.print("Condition is true");
+      } else {
+         System.out.println("Condition is false");
+      }
+
+      var1.close();
+   }
+}
+
+
+
+
  * else if ladder
      if condition1{
             //block of code
@@ -28,6 +68,35 @@ Control Statements
            //block of code
        }
 
+import java.util.Scanner;
+
+public class condition3 {
+   public condition3() {
+   }
+
+   public static void main(String[] var0) {
+      Scanner var1 = new Scanner(System.in);
+      System.out.println("Enter a number:");
+      int var2 = var1.nextInt();
+      if (var2 >= 80) {
+         System.out.print("Grade A");
+      } else if (var2 <= 80 && var2 >= 60) {
+         System.out.println("Grade B");
+      } else if (var2 <= 60 && var2 >= 50) {
+         System.out.println("Grade C");
+      } else if (var2 < 50 && var2 >= 35) {
+         System.out.println("Grade D");
+      } else {
+         System.out.println("failed");
+      }
+
+      var1.close();
+   }
+}
+
+
+
+
  * nessted if
     if condition1{
             if condition2{
@@ -35,7 +104,193 @@ Control Statements
               }
            //block of code statement1
    }
+
+import java.util.Scanner;
+
+public class condition4 {
+   public condition4() {
+   }
+
+   public static void main(String[] var0) {
+      Scanner var1 = new Scanner(System.in);
+      System.out.println("Enter a numer:");
+      int var2 = var1.nextInt();
+      if (var2 >= 20) {
+         if (var2 > 20) {
+            System.out.println("Condition2");
+         }
+
+         System.out.println("Condition1");
+      }
+
+      var1.close();
+   }
+}
+
+
+
  * switch
+switch (condition){
+case1: 
+      \\statement1;
+       \\break;
+case2:
+      \\statement2;
+      \\break;
+case n:
+       \\statement n;
+       \\break;
+
+Example 1
+
+
+import java.util.Scanner;
+public class switchcase {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        System.out.println("Enter a number (1-12):");
+        int a=sc.nextInt();
+
+        switch(a){
+            case 1:
+                System.out.println("January");
+                break;
+            case 2:
+                System.out.println("febuary");
+                break;
+            case 3:
+                System.out.println("March");
+                break;
+            case 4:
+                System.out.println("April");
+                break;
+            case 5:
+                System.out.println("May");
+                break;
+            case 6:
+                System.out.println("June");
+                break;
+            case 7:
+                System.out.println("July");
+                break;
+            case 8:
+                System.out.println("August");
+                break;
+            case 9:
+                System.out.println("September");
+                break;
+            case 10:
+                System.out.println("October");
+                break;
+            case 11:
+                System.out.println("November");
+                break;
+            case 12:
+                System.out.println("December");
+                break;
+            default:
+                System.out.println("Invalid number");
+        }
+        sc.close();
+    }
+}
+Example 2
+
+
+import java.util.Scanner;
+public class switchcase {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        System.out.println("Enter a number (1-7):");
+        int a=sc.nextInt();
+
+        switch(a){
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+            default:
+                System.out.println("Invalid number");
+        }
+        sc.close();
+    }
+}
+
+Example 3
+
+import java.util.Scanner;
+public class switchcase {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        System.out.println("Enter a number (1-13):");
+        int a=sc.nextInt();
+
+        switch(a){
+            case 1:
+                System.out.println("CSE");
+                break;
+            case 2:
+                System.out.println("CSE-AI");
+                break;
+            case 3:
+                System.out.println("CSE_DS");
+                break;
+            case 4:
+                System.out.println("CSE-CS");
+                break;
+            case 5:
+                System.out.println("CSE-AI&DS");
+                break;
+            case 6:
+                System.out.println("CSE-IOT");
+                break;
+            case 7:
+                System.out.println("MCA");
+                break;
+            case 8:
+                System.out.println("MBA");
+                break;
+            case 9:
+                System.out.println("ECE");
+                break;
+            case 10:
+                System.out.println("EEE");
+                break;
+            case 11:
+                System.out.println("MECH");
+                break;
+            case 12:
+                System.out.println("CIVIL");
+                break;
+            case 13:
+                System.out.println("IT");
+                break;
+            default:
+                System.out.println("Invalid Branch Number");
+        }
+        sc.close();
+    }
+}
+
+
+
 2.looping Statements
  * for 
  * while 

@@ -293,6 +293,37 @@ public class switchcase {
 
 2.looping Statements
  * for 
+for(initialization; condition; increment/decrement){
+    // Statements
+}
+Example 1
+public class looping {
+    public static void main(String[] args) {
+        int num=30;
+        for(int i=0; i<=num; i++){
+            System.out.println(i);
+        }
+    }
+}
+
+Example 2
+
+
+import java.util.Scanner;
+public class looping {
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int a=sc.nextInt();
+
+        for(int i=1; i<=10; i++){
+            System.out.println(a + " x " + i + " = " + (a*i));
+        }
+        sc.close();
+    }
+}
+
+
  * while 
  * do while 
 3. Jumping Statements

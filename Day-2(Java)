@@ -325,7 +325,19 @@ public class looping {
 
 
  * while 
+Initilize variable
+while(condition){
+\\statement
+}
+
  * do while 
+do{
+initilize;
+\\statement;
+}
+while(condition){
+\\statemnent
+}
 3. Jumping Statements
  * continue
  * break

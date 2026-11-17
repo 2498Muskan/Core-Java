@@ -1,7 +1,16 @@
 Control Statements
 1. Conditional Statements
  * if
- * else if 
+     if condition{
+            //block of code
+        }
+ * else if
+      if condition{
+            //block of code
+        }
+       else{
+           //block of code
+       }
  * else if ladder
  * nessted if
  * switch

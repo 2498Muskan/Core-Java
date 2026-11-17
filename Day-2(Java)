@@ -12,7 +12,29 @@ Control Statements
            //block of code
        }
  * else if ladder
+     if condition1{
+            //block of code
+        }
+       else if condition2{
+           //block of code
+       }
+       else if condition3{
+           //block of code
+       }
+      else if condition4{
+           //block of code
+       }
+      else{
+           //block of code
+       }
+
  * nessted if
+    if condition1{
+            if condition2{
+               //block of code statement2
+              }
+           //block of code statement1
+   }
  * switch
 2.looping Statements
  * for 

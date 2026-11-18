@@ -1,0 +1,79 @@
+## **1. Important Java String Functions**
+
+| No. | String Function      | Description                            | Example                      |
+| --- | -------------------- | -------------------------------------- | ---------------------------- |
+| 1   | `length()`           | Finds string length                    | `str.length()`               |
+| 2   | `charAt()`           | Returns character at index             | `str.charAt(0)`              |
+| 3   | `toUpperCase()`      | Converts to uppercase                  | `str.toUpperCase()`          |
+| 4   | `toLowerCase()`      | Converts to lowercase                  | `str.toLowerCase()`          |
+| 5   | `trim()`             | Removes starting and ending spaces     | `str.trim()`                 |
+| 6   | `equals()`           | Compares two strings                   | `str.equals(str2)`           |
+| 7   | `equalsIgnoreCase()` | Compares ignoring case                 | `str.equalsIgnoreCase(str2)` |
+| 8   | `concat()`           | Joins two strings                      | `str.concat(str2)`           |
+| 9   | `contains()`         | Checks whether text exists             | `str.contains("Java")`       |
+| 10  | `startsWith()`       | Checks starting characters             | `str.startsWith("Ja")`       |
+| 11  | `endsWith()`         | Checks ending characters               | `str.endsWith("va")`         |
+| 12  | `indexOf()`          | Finds first occurrence index           | `str.indexOf('a')`           |
+| 13  | `lastIndexOf()`      | Finds last occurrence index            | `str.lastIndexOf('a')`       |
+| 14  | `substring()`        | Extracts part of string                | `str.substring(0,3)`         |
+| 15  | `replace()`          | Replaces characters or text            | `str.replace('a','b')`       |
+| 16  | `isEmpty()`          | Checks whether string is empty         | `str.isEmpty()`              |
+| 17  | `isBlank()`          | Checks empty or whitespace-only string | `str.isBlank()`              |
+| 18  | `split()`            | Splits string into an array            | `str.split(" ")`             |
+| 19  | `repeat()`           | Repeats a string                       | `str.repeat(3)`              |
+| 20  | `compareTo()`        | Compares strings lexicographically     | `str.compareTo(str2)`        |
+
+## **2. Java Program Using String Functions**
+
+```
+public class StringFunctions {
+    public static void main(String[] args) {
+
+        String str = "Hello Java";
+        String str2 = "Hello";
+
+        System.out.println("Length: " + str.length());
+
+        System.out.println("Character: " + str.charAt(0));
+
+        System.out.println("Uppercase: " + str.toUpperCase());
+
+        System.out.println("Lowercase: " + str.toLowerCase());
+
+        System.out.println("Equals: " + str.equals(str2));
+
+        System.out.println("Concat: " + str.concat(str2));
+
+        System.out.println("Contains: " + str.contains("Java"));
+
+        System.out.println("Starts With: " + str.startsWith("Hello"));
+
+        System.out.println("Ends With: " + str.endsWith("Java"));
+
+        System.out.println("Index: " + str.indexOf('a'));
+
+        System.out.println("Substring: " + str.substring(0, 5));
+
+        System.out.println("Replace: " + str.replace('a', 'b'));
+
+        System.out.println("Trim: " + str.trim());
+
+        System.out.println("Compare: " + str.compareTo(str2));
+
+    }
+}
+```
+
+## **3. Important Differences**
+
+| Function             | Difference                                 |
+| -------------------- | ------------------------------------------ |
+| `==`                 | Compares string references                 |
+| `equals()`           | Compares string contents                   |
+| `equalsIgnoreCase()` | Compares contents without considering case |
+| `length()`           | Returns number of characters               |
+| `charAt()`           | Returns one character                      |
+| `substring()`        | Returns a part of the string               |
+| `indexOf()`          | Returns first matching position            |
+| `lastIndexOf()`      | Returns last matching position             |
+

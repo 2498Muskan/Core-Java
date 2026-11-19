@@ -1,0 +1,51 @@
+Inspect :
+length obj.length()
+charAt() obj.charAt()
+isEmpty() obj.isEmpty()
+isBlank() obj.IsBlank()
+
+Extract by index:
+subString() obj.subString()
+indexOf()   obj.indexOf()
+
+Compare:
+equals()    obj.equals()
+compareTo() obj.compareTo()
+
+Find :
+contains()    str.contains()
+Startswith()  str.Startswith()
+endswith()    str.endswith()
+
+Transform:
+trim()   str.trim()
+strip()  str.strip()
+concate() str.cancate()
+repeat()  str.repeat()
+
+Replace:
+replace()       str.replace()
+replaceall()    str.replaceall()
+replaceFirst()  str.replaceFirst()
+
+Split:
+str.split()
+
+Join:
+str.join()
+
+toCharArray:
+str.toCharArray()
+
+valueOf:
+str.valueOf()
+
+matches:
+str.matches()
+
+formatted:
+str.formatted()
+
+
+
+String builders:

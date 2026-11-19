@@ -75,3 +75,26 @@ Types of Classes:
 
 1. Concrete class: 
 It  is a regular class that can be used to create the objects
+
+
+constructor
+there are 3 types
+1. default
+2. parameterized
+3.Non parameterized
+
+
+access modifiers
+1. default
+2. private
+3. public
+4. protected
+
+
+Function Type	
+No Args, No Return	
+With Args, No Return	
+No Args, With Return	
+With Args, With Return
+
+

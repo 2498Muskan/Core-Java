@@ -58,3 +58,20 @@ public class strings2 {
 
 String buffter:
 
+
+
+
+Types of Classes:
+1. Concrete class
+2.Abstract class
+3.Final class
+4. Static nested class
+5.Inner class
+6. local class
+7.anonoyusm class
+8. enum class
+9. Interface
+
+
+1. Concrete class: 
+It  is a regular class that can be used to create the objects

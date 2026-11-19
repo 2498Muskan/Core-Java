@@ -98,3 +98,25 @@ No Args, With Return
 With Args, With Return
 
 
+
+Static method
+
+class a{
+static int hello(int a,int b){
+       return a*b;
+}
+public static void main{
+        a.hello(10,20);
+}
+}
+
+Non-static method
+class a{
+non-static int hello(int a,int b){
+       return a*b;
+}
+public static void main{
+        a.obj =new a();
+        obj.hello(10,20);
+}
+}

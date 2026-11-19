@@ -49,3 +49,12 @@ str.formatted()
 
 
 String builders:
+public class strings2 {
+    public static void main(String[] args) {
+        StringBuilder obj=new StringBuilder("Hello");
+        System.out.println(obj);
+    }
+}
+
+String buffter:
+

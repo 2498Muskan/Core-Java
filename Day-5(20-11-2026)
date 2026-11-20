@@ -1,0 +1,185 @@
+OOPs main concepts
+1. Encapsulation --- wraps data and methods into a single unit
+2. polymorphism  --- Compile-time (overloading): Same method name with different parameters.
+                     Run-time (overriding): A child class provides its own implementation of a parent class method
+3. Data Abstraction --- 
+4. Inheritance   ---  Allows a child class (subclass) to acquire properties and methods from a parent class (superclass).
+
+
+
+## **Types of Inheritance in Java**
+
+Java has 5 types of inheritance:
+
+1. Single Inheritance
+2. Multilevel Inheritance
+3. Hierarchical Inheritance
+4. Multiple Inheritance
+5. Hybrid Inheritance
+
+### **1. Single Inheritance**
+
+One child class inherits from one parent class.
+**Example:**
+class Animal {
+    void eat() {
+        System.out.println("Animal is eating");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog is barking");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog d = new Dog();
+
+        d.eat();
+        d.bark();
+    }
+}
+**Output:**
+Animal is eating
+Dog is barking
+```
+
+### **2. Multilevel Inheritance**
+
+One class inherits from another class, and a third class inherits from the second class.
+
+**Example:**
+class Animal {
+    void eat() {
+        System.out.println("Eating");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Barking");
+    }
+}
+
+class Puppy extends Dog {
+    void weep() {
+        System.out.println("Weeping");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Puppy p = new Puppy();
+
+        p.eat();
+        p.bark();
+        p.weep();
+    }
+}
+```
+
+**Output:**
+Eating
+Barking
+Weeping
+
+### **3. Hierarchical Inheritance**
+
+Multiple child classes inherit from one parent class.
+
+**Example:**
+class Animal {
+    void eat() {
+        System.out.println("Animal is eating");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog is barking");
+    }
+}
+
+class Cat extends Animal {
+    void meow() {
+        System.out.println("Cat is meowing");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog d = new Dog();
+        Cat c = new Cat();
+
+        d.eat();
+        d.bark();
+
+        c.eat();
+        c.meow();
+    }
+}
+**Output:**
+Animal is eating
+Dog is barking
+Animal is eating
+Cat is meowing
+
+### **4. Multiple Inheritance**
+
+One child class inherits from multiple parent classes.
+
+**Important:** Java does not support multiple inheritance using classes because it can create ambiguity.
+However, Java supports multiple inheritance through interfaces.
+**Example:**
+interface A {
+    void displayA();
+}
+
+interface B {
+    void displayB();
+}
+
+class C implements A, B {
+    public void displayA() {
+        System.out.println("Interface A");
+    }
+
+    public void displayB() {
+        System.out.println("Interface B");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        C obj = new C();
+
+        obj.displayA();
+        obj.displayB();
+    }
+}
+```
+
+**Output:**
+Interface A
+Interface B
+
+### **5. Hybrid Inheritance**
+
+Combination of two or more types of inheritance.
+**Important:** Java does not support hybrid inheritance through classes alone. It can be achieved using interfaces.
+
+## **Quick Revision Table**
+
+| Type         | Meaning                          |
+| ------------ | -------------------------------- |
+| Single       | One parent → One child           |
+| Multilevel   | Grandparent → Parent → Child     |
+| Hierarchical | One parent → Multiple children   |
+| Multiple     | Multiple parents → One child     |
+| Hybrid       | Combination of inheritance types |
+
+**Interview question:** Why doesn't Java support multiple inheritance using classes?
+
+Answer: To avoid ambiguity, especially the Diamond Problem, where a child class may inherit the same method from two parent classes.
